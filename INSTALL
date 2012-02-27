@@ -1,0 +1,83 @@
+Magnus: Mouse Advanced GNU Speech
+=================================
+
+In order to get Magnus running, the first step is obtaining
+the binary compiled files (bytecodes) of the project 
+distribution.
+
+There are three ways to run Magnus on a computer: through
+the compilation of the source files available in the
+source package (1), through the direct execution of the
+precompiled bytecodes available in the binary package (2)
+and directy from a Java Web Start prepared application (3).
+
+
+*****
+(1) magnus-<version>-src.tar.gz
+
+This package contains the source files of the project. It is
+intended for developers who wish to improve Magnus or use
+it for any application they may need or want.
+
+Magnus has been developed under Linkat, which is the
+GNU/Linux distribution for the Catalan educational system,
+promoted by The Ministry of Education of Catalonia.
+Its functionality has been thoroughly tested under this
+platform, a very important aspect to take care of
+when it comes to develoment environments. Despite of it,
+Magnus should be appropiate for any other GNU/Linux
+distribution, if the user intends to develop upon it.
+If not, almost any other platform with a Java Virtual
+Machine equal or newer than the 1.5 release should be
+able to run it.
+
+Once this tarball is downloaded, it must be uncompressed
+with
+
+   tar -xvzf magnus<version>-src.tar.gz
+
+The process should end with the creation of a folder named
+"magnus" which contains the source files of the project.
+
+Once in the folder, the Apache Ant builder will be in charge
+of the compilation process just by typing
+
+   ant
+
+And finally, under the same root folder
+
+   ant run
+
+and Magnus should successfully be launched.
+
+
+*****
+(2) magnus-<version>-bin.tar.gz
+
+This package contains the binary distribution under a
+tarball file which must be uncompressed in the same way
+as described in (1). Then, in the folder produced by
+this process, just by typing
+
+   java -jar -Xmx500m Magnus-<version>.jar
+
+the program should be launched successfully.
+
+
+*****
+(3) Magnus.jnlp
+
+This file makes easy the hole process from the obtention
+to the execution. It can be placed in a website. Up to date
+it can be linked from the blog of the project available at
+
+   magnusproject.wordpress.com
+
+Java Web Start checks that the users have the latest release,
+downloading it automatically in case they don't have it, and
+launching the program afterwards. 
+
+This file states what files are needed by the application,
+which are its dependancies, and resolves the process
+automatically. In the author's Master Thesis
+the preparation of this file is explained in detail.

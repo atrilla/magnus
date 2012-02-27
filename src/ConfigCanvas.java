@@ -1,0 +1,94 @@
+/*
+ * File    : ConfigCanvas.java
+ * Created : 11-Feb-2008
+ * By      : atrilla
+ *
+ * Magnus - Computer mouse pointer controller through voice commands
+ *
+ * Copyright (C) 2007 Alexandre Trilla &
+ * Departament d'Educacio de la Generalitat de Catalunya &
+ * Universitat Ramon Llull La Salle Enginyeria de Telecomunicacions
+ *
+ *
+ * This file is part of Magnus.
+ *
+ * Magnus is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Magnus is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details (see the COPYING file).
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Magnus.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Cursor;
+import java.awt.Font;
+import java.awt.Frame;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Label;
+import java.awt.MediaTracker;
+import java.awt.Panel;
+import java.awt.ScrollPane;
+import java.awt.TextArea;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.net.URL;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+
+/**
+ * The class <it>ConfigCanvas</it> defines the canvas where all
+ * the configuration elements will be placed.
+ * @author Alexandre Trilla (atrilla@xtec.cat, st12809@salle.url.edu)
+ */
+
+public class ConfigCanvas extends Canvas {
+
+    /**
+     * This is a very basic constructor for <it>ConfigCanvas</it>
+     */
+
+    public ConfigCanvas() { //constructor
+        super();
+    }
+
+   /**
+     * This is the main method to display (paint) the canvas.
+     * @throws AWTException
+     * @throws IOException
+     */
+
+    public void paint (Graphics g) {
+        Toolkit toolkit=Toolkit.getDefaultToolkit();
+        URL url=getClass().getResource("conflogo.png");
+        Image image=toolkit.getImage(url);
+        MediaTracker mediaTracker=new MediaTracker(this);
+        mediaTracker.addImage(image,0);
+            try {
+                mediaTracker.waitForAll();
+                    if(mediaTracker.checkAll()) {
+                        g.drawImage(image,0,0,450,100,this);
+                    }
+            } catch (InterruptedException e) {
+                System.out.println("No puc amb la imatge!");
+            }
+    }
+
+}

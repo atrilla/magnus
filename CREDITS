@@ -1,0 +1,81 @@
+Magnus: Mouse Advanced GNU Speech
+=================================
+
+One line description:
+
+	Computer mouse pointer controller through voice commands	
+
+
+Project main website:
+
+	http://magnusproject.wordpress.com
+
+
+Attributions:
+
+	Alexandre Trilla Castello
+	<atrilla@salle.url.edu>, <atrilla@xtec.cat>
+	http://www.salle.url.edu/~atrilla
+
+	Departament d'Educacio de la Generalitat de Catalunya
+	http://www.xtec.cat
+
+	Universitat Ramon Llull La Salle Enginyeria de Telecomunicació
+	http://www.salle.url.edu 
+
+
+Development:
+
+	Magnus has been developed by Alexandre Trilla
+	for the IT Projects Unit of the Ministry of
+	Education of The Government of Catalonia 
+	(The Generalitat de Catalunya).
+
+	Its development platform has been Linkat 2,
+	which is the GNU/Linux distribution for
+	education promoted by The Government of
+	Catalunya.
+
+	Magnus constitutes the Master Thesis of
+	its author, who has coursed Engineering in
+	Telecommunications in Universitat Ramon
+	Llull La Salle in Barcelona.
+
+
+Credentials:
+
+	This product includes software developed by:
+
+	* Sphinx-4
+	Carneggie Mellon University
+	http://cmusphinx.sourceforge.net/sphinx4/
+
+	* Jdom
+	The JDOM Project
+	http://www.jdom.org
+
+
+License:
+
+	Copyright (C) 2007 Alexandre Trilla &
+	Departament d'Educacio de la Generalitat de Catalunya &
+	Universitat Ramon Llull La Salle Enginyeria de Telecomunicacions
+
+	MAGNUS is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	MAGNUS is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details (see the COPYING file).
+
+	You should have received a copy of the GNU General Public License
+	along with MAGNUS.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Support:
+
+	Magnus has been developed with the collaboration of
+	Enginyeria i Arquitectura La Salle (Universitat Ramon Llull).

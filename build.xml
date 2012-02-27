@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<project name="Magnus" default="document" basedir=".">
+
+  <description>
+    project build file
+  </description>
+
+  <!-- set global properties for this build -->
+  <property name="version" value="0.1.1"/>
+  <property name="src_dir" location="src"/>
+  <property name="build_dir" location="build"/>
+  <property name="dist_dir" location="dist"/>
+  <property name="img_dir" location="img"/>
+  <property name="cfg_dir" location="cfg"/>
+  <property name="lib_dir" location="lib"/>
+  <property name="doc_dir" location="jdoc"/>
+  <property name="main-class" value="Magnus"/>
+
+  <path id="classpath">
+    <fileset dir="${lib_dir}" includes="**/*.jar"/>
+  </path>
+
+  <target name="init">
+    <!-- Call the Sphinx-4 buildfile -->
+    <ant antfile="build.xml" dir="sphinx4-1.0beta" inheritAll="false" />
+    <copy todir="${lib_dir}">
+      <fileset dir="sphinx4-1.0beta/lib">
+        <include name="sphinx4.jar"/>
+	<include name="WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar" />
+      </fileset>
+    </copy>
+    <chmod file="${lib_dir}/sphinx4.jar" perm="755"/>
+    <chmod file="${lib_dir}/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar" perm="755"/>
+    <!-- Create the time stamp -->
+    <tstamp>
+      <format property="datestamp" pattern="dd-MM-yyyy"/>
+    </tstamp>
+  </target>
+
+  <target name="compile" depends="init"
+        description="Compile the source" >
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build_dir}"/>
+    <!-- Compile the java code from ${src_dir} into ${build_dir} -->
+    <javac srcdir="${src_dir}" destdir="${build_dir}">
+      <classpath refid="classpath"/>
+    </javac>
+  </target>
+
+  <target name="dist" depends="compile"
+        description="Generate the distribution" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist_dir}"/>
+
+    <!-- Copy images in ${img_dir} into ${build_dir} in order to be
+      available in the jar file -->
+    <copy todir="${build_dir}">
+      <fileset dir="${img_dir}">
+        <include name="**/*.*"/>
+      </fileset>
+      <fileset dir="${cfg_dir}">
+        <include name="**/*.*"/>
+      </fileset>
+    </copy>
+
+    <!-- Put everything in ${build_dir} into the magnus-${version}.jar file -->
+    <jar jarfile="${dist_dir}/${ant.project.name}-${version}.jar" basedir="${build_dir}">
+      <manifest>
+        <attribute name="Main-Class" value="${main-class}"/>
+        <attribute name="Class-Path" value="js.jar jsapi.jar sphinx4.jar tags.jar WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar jdom.jar"/>
+      </manifest>
+    </jar>
+  </target>
+
+
+  <target name="run" depends="dist" description="Execute the project">
+    <java fork="true" classname="${main-class}">
+      <classpath>
+        <path refid="classpath"/>
+        <path location="${dist_dir}/${ant.project.name}-${version}.jar"/>
+      </classpath>
+    </java>
+  </target>
+
+
+  <target name="document" depends="dist" description="Generate javadoc" >
+    <echo message="Building javadoc"/>
+    <mkdir dir="${doc_dir}"/>
+    <!-- document all the source -->
+    <javadoc destdir="${doc_dir}"
+        author="true"
+        version="true"
+        use="true"
+        windowtitle="${ant.project.name} API">
+      <doctitle><![CDATA[<h1>${ant.project.name}</h1>]]></doctitle>
+      <fileset dir="${src_dir}" includes="*.java"/>
+      <classpath>
+        <fileset dir="${build_dir}" includes="*.class" />
+	<fileset dir="${lib_dir}" includes="*.jar" />
+	<pathelement location="sphinx4-1.0beta/" />
+      </classpath> 
+      <link href="http://cmusphinx.sourceforge.net/sphinx4/javadoc/" />
+      <link href="http://java.sun.com/j2se/1.5.0/docs/api/" />
+      <link href="http://www.jdom.org/docs/apidocs/" />
+    </javadoc>				
+  </target>
+
+
+  <target name="clean"
+        description="Clean up" >
+    <!-- Delete the ${build_dir} and ${dist_dir} directory trees -->
+    <delete dir="${build_dir}"/>
+    <delete dir="${dist_dir}"/>
+    <delete dir="${doc_dir}"/>
+    <delete file="${lib_dir}/sphinx4.jar"/>
+    <delete file="${lib_dir}/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar"/>
+    <ant antfile="build.xml" dir="sphinx4-1.0beta" inheritAll="false" target="clean" />
+  </target>
+
+</project>

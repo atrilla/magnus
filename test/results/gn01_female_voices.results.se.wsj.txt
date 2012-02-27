@@ -1,0 +1,8 @@
+# --------------- Summary statistics ---------
+   Accuracy: 77.391%    Errors: 42  (Sub: 23  Ins: 16  Del: 3)
+   Words: 115   Matches: 89    WER: 36.522%
+   Sentences: 5   Matches: 0   SentenceAcc: 0.000%
+   Total Time Audio: 212.74s  Proc: 193.16s  Speed: 0.91 X real time
+   Mem  Total: 63.56 Mb  Free: 0.00 Mb
+   Used: This: 63.56 Mb  Avg: 63.32 Mb  Max: 63.56 Mb
+   11:47.699 INFO batch                BatchDecoder: 5 files decoded

@@ -1,0 +1,92 @@
+Magnus: Mouse Advanced GNU Speech
+=================================
+
+The organization of the source release of Magnus is as follows:
+
++ magnus/
+  + build.xml
+  + cfg/
+  + ChangeLog
+  + CHANGES
+  + COPYING
+  + CREDITS
+  + HACKING
+  + img/
+  + INSTALL
+  + lib/
+  + README
+  + scilabworks/
+  + sphinx4-1.0beta/
+  + src/
+
+The tree above can be easily obtained with the "ls -l" command on a
+Linux console. In alphabetical order, the elements listed above are
+described in the following lines. Probably yet many unknown concepts 
+are to be found, especially if this is the first time the reader
+deals with the project. There's no worry to take care of since in
+the Thesis every aspect is described in detail.
+
+>> magnus/
+This is the root directory of the project. As it can be seen in the
+tree, all the rest of the elements are descendants of this parent
+folder.
+
+>> build.xml
+This is an "ant" script file. "Ant" is a builder for Java projects.
+It enables the whole project precompilation with an extremely simple
+set of commands. For its usage instructions please refer to the
+INSTALL file.
+
+>> cfg/
+This folder contains the configuration files needed by Magnus, which
+indicate the elements required for the speech recognizer, as well as
+the dictionary and grammar rules established for the program to
+work correctly.
+
+>> ChangeLog
+This text file indicates all the changes applied to the project's
+fileset.
+
+>> CHANGES
+This text file keeps a record of all the changes applied to the
+project between releases.
+
+>> COPYING
+This file contains a copy of the license applied to Magnus, which
+is the GPLv3.
+
+>> CREDITS
+This text file contains a reference to all the projects that Magnus
+makes use of to run.
+
+>> HACKING
+This is the text file that the reader is reading at this moment.
+It describes every file contained in the project root folder.
+
+>> img/
+This folder contains the images that are used by Magnus.
+
+>> INSTALL
+This text file describes the intall process, as well as the
+commands to carry it out and run Magnus successfully.
+
+>> lib/
+This folder contains the necessary resources to run Magnus.
+
+>> README
+This text file gives a general description of Magnus.
+
+>> scilabworks/
+Speech enhancement experiments with Scilab.
+
+>> sphinx4-1.0beta/
+This folder contains Sphinx4, the free speech recognition
+software on which Magnus is built.
+
+>> src/
+This folder keeps the Magnus source files. Apart from the
+configuration files, installation scripts and a few
+precise modifications applied to Sphinx4, in this folder
+there should be encountered all the needed information
+to run Magnus successfully or contribute to the project's
+developement.

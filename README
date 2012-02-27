@@ -1,0 +1,44 @@
+Magnus: Mouse Advanced GNU Speech
+=================================
+
+Magnus is a speech controlled mouse pointer application through 
+Catalan voice commands. This application aims to provide oral 
+accessibility for people with reduced mobility.
+
+Magnus has been developed for the Ministry of Education of 
+The Government of Catalonia (The Generalitat de Catalunya).
+
+----------
+
+This README text file only provides a general description of
+the project. In order to obtain all the information available
+about Magus (sources, binaries, documentation, discussion forums,
+application notes, etc.) please refer to the project's blog at
+
+	http://magnusproject.wordpress.com
+
+
+In order to obtain the project's files organisation please refer
+to the HACKING text file.
+
+
+For any comment or suggestion of any kind, the author would be
+glad to be contacted through his e-mail addresses
+
+	<atrilla@xtec.cat>
+	<atrilla@salle.url.edu>
+
+Please use this one:
+****************************************************************
+*   <alex@atrilla.net>                                         *
+****************************************************************
+
+Some dependencies are missing in this source code distribution
+of Magnus, such as Sphinx-4, the acoustic models, the patch for
+Spanish, etc. Please refer to the original source forge at:
+
+    https://forja.rediris.es/projects/csl2-magnus/
+
+
+Wishing that Magnus may be useful to society, receive a most
+sincere and cordial salutation.

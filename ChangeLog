@@ -1,0 +1,208 @@
+>> 26-Feb-2008	Alexandre Trilla (st12809@salle.url.edu, atrilla@xtec.cat)
+
+/magnus/
+   build.xml
+   ChangeLog
+   CHANGES
+   COPYING
+   CREDITS
+   HACKING
+   INSTALL
+   README
+
+/magnus/cfg/
+   magnus.config.xml
+   magnus.dict
+   magnus.gram
+
+/magnus/img/
+   about_img.png
+   comfound.png
+   conflogo.png
+   credencials.png
+   desenvolupament.png
+   Earrow.png
+   icoarros.png
+   icoclic.png
+   icoconfig.png
+   icodoble.png
+   icomenu.png
+   icon.png
+   icostop.png
+   keyboard.png
+   listening.png
+   llicencia.png
+   magnus_header.png
+   mouse.png
+   Narrow.png
+   processing.png
+   salle.png
+   Sarrow.png
+   sleeping.png
+   suport.png
+   Warrow.png
+
+/magnus/lib/
+   jdom.jar
+   jsapi.jar
+   jsapi.sh
+   js.jar
+   README_RHINO.txt
+   README.txt
+   tags.jar
+
+/magnus/sphinx4-1.0beta/edu/cmu/sphinx/util/props/
+   PropertyType.java
+
+/magnus/sphinx4-1.0beta/edu/cmu/sphinx/frontend/util/
+   Microphone.java
+
+/magnus/src/
+   ConfigCanvas.java
+   ConfigPanel.java
+   ConfigScreen.java
+   CredenCanvas.java
+   DesenvCanvas.java
+   DuetPanel.java
+   LicCanvas.java
+   Magnus.java
+   MouseControl.java
+   MyCanvasAbout.java
+   MyCanvas.java
+   MyIcon.java
+   MyMenu.java
+   MyPanelImages.java
+   MyPanelLabels.java
+   MyScreenAbout.java
+   MyScreen.java
+   RecognizerThread.java
+   SalleCanvas.java
+   SupCanvas.java
+   VUMeterThread.java
+
+
+
+>> 25-Oct-2008	Alexandre Trilla (atrilla@salle.url.edu, atrilla@xtec.cat)
+
+/magnus/cfg/
+   magnus.dict.original
+   magnus.gram.original
+
+/magnus/img/
+   icodescansa.png
+   icocanvia.png
+
+/magnus/lib/
+   RM1_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar
+
+/magnus/src/
+   ButterLP.java
+   DeEsser.java
+   GenericFilter.java
+   HPSFilter.java
+   PinkNoiseAdd.java
+   PinkNoiseGen.java
+
+/magnus/test/
+
+   deptedu.test.sh
+
+/magnus/test/batchfiles/
+   deptedu.batch
+   deptedu.femalevoices.batch
+   deptedu.malevoices.batch
+
+/magnus/test/configfiles/
+   deptedu.config.nose.rm1.xml
+   deptedu.config.nose.wsj.xml
+   deptedu.config.se.rm1.xml
+   deptedu.config.se.wsj.apn.xml
+   deptedu.config.se.wsj.xml
+
+/magnus/test/results/
+   babble01_female_voices.results.nose.wsj.txt
+   babble01_female_voices.results.se.wsj.apn.txt
+   babble01_female_voices.results.se.wsj.txt
+   babble01_male_voices.results.nose.wsj.txt
+   babble01_male_voices.results.se.wsj.apn.txt
+   babble01_male_voices.results.se.wsj.txt
+   babble01_pn01_female_voices.results.nose.wsj.txt
+   babble01_pn01_female_voices.results.se.wsj.txt
+   babble01_pn01_male_voices.results.nose.wsj.txt
+   babble01_pn01_male_voices.results.se.wsj.txt
+   bn01_female_voices.results.nose.wsj.txt
+   bn01_female_voices.results.se.wsj.apn.txt
+   bn01_female_voices.results.se.wsj.txt
+   bn01_male_voices.results.nose.wsj.txt
+   bn01_male_voices.results.se.wsj.apn.txt
+   bn01_male_voices.results.se.wsj.txt
+   gn01_female_voices.results.nose.wsj.txt
+   gn01_female_voices.results.se.wsj.apn.txt
+   gn01_female_voices.results.se.wsj.txt
+   gn01_male_voices.results.nose.wsj.txt
+   gn01_male_voices.results.se.wsj.apn.txt
+   gn01_male_voices.results.se.wsj.txt
+   original_female_voices.results.nose.rm1.txt
+   original_female_voices.results.nose.wsj.txt
+   original_female_voices.results.se.rm1.txt
+   original_female_voices.results.se.wsj.apn.txt
+   original_female_voices.results.se.wsj.txt
+   original_male_voices.results.nose.rm1.txt
+   original_male_voices.results.nose.wsj.txt
+   original_male_voices.results.se.rm1.txt
+   original_male_voices.results.se.wsj.apn.txt
+   original_male_voices.results.se.wsj.txt
+   pn01_female_voices.results.nose.rm1.txt
+   pn01_female_voices.results.nose.wsj.txt
+   pn01_female_voices.results.se.rm1.txt
+   pn01_female_voices.results.se.wsj.apn.txt
+   pn01_female_voices.results.se.wsj.txt
+   pn01_male_voices.results.nose.rm1.txt
+   pn01_male_voices.results.nose.wsj.txt
+   pn01_male_voices.results.se.rm1.txt
+   pn01_male_voices.results.se.wsj.apn.txt
+   pn01_male_voices.results.se.wsj.txt
+   rn01_female_voices.results.nose.wsj.txt
+   rn01_female_voices.results.se.wsj.apn.txt
+   rn01_female_voices.results.se.wsj.txt
+   rn01_male_voices.results.nose.wsj.txt
+   rn01_male_voices.results.se.wsj.apn.txt
+   rn01_male_voices.results.se.wsj.txt
+   vn01_female_voices.results.nose.wsj.txt
+   vn01_female_voices.results.se.wsj.apn.txt
+   vn01_female_voices.results.se.wsj.txt
+   vn01_male_voices.results.nose.wsj.txt
+   vn01_male_voices.results.se.wsj.apn.txt
+   vn01_male_voices.results.se.wsj.txt
+   wn01_female_voices.results.nose.wsj.txt
+   wn01_female_voices.results.se.wsj.apn.txt
+   wn01_female_voices.results.se.wsj.txt
+   wn01_male_voices.results.nose.wsj.txt
+   wn01_male_voices.results.se.wsj.apn.txt
+   wn01_male_voices.results.se.wsj.txt
+
+/magnus/test/soundfiles/
+   alex.raw
+   anna.raw
+   babble01.raw
+   bn01.raw
+   enric.raw
+   francesc.raw
+   gn01.raw
+   jaume.raw
+   joan.raw
+   laura.raw
+   manel.raw
+   marc.raw
+   pablo.raw
+   pn01.raw
+   rn01.raw
+   roberto.raw
+   sandra.raw
+   sara.raw
+   silvia.raw
+   vn01.raw
+   wn01.raw
+
+/magnus/test/tools/
+   PinkNoiseNumbers.java

@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+/**
+ * JSGF MAGNUS Grammar in Catalan
+ */
+
+grammar magnus;
+
+public <tokens> = ( LEFT | RIGHT | UP | DOWN | STOP | CLICK | MENU | DOUBLE | DRAG | KEYBOARD | MOUSE )*;

@@ -1,0 +1,16 @@
+Speech enhancement analysis and development with Scilab
+=======================================================
+
+This development area contains Scilab scripts and audio files used to analyse and develop the speech
+enhancement unit for Magnus.
+
+This is used basically as a means of communication between the author and his thesis advisor.
+Despite of it, it may contain interesting information in the field of speech enhancement and signal processing
+in general. This is why it has been freed on the Internet under the same licence as for Magnus, the
+GPLv3.
+
+Please don't expect a typical project folder organization for this area, it is not so. Only the licence
+text COPYING and this README file have been included and produced to make all the code freely available for
+anyone who wishes to see bowels of this processing unit.
+
+In the hope that this is most useful to the reader, kind regards.

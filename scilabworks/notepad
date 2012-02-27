@@ -1,0 +1,27 @@
+DISSENY DEL SISTEMA SPEECH ENHANCEMENT BASELINE
+===============================================
+
+>> alpha_calc.sci definitiu. Cal justificar analíticament per què a pi/2 peta.
+No té sentit que talli més amunt ja que els formants de les vocals es troben
+tots a freqüències inferiors (2KHz max).
+
+>> hard-knee attenuation estimator: y=-0.533x+2.6 per [3,4.5]
+
+>> en funció del marge a recórrer en cada frame, el filtre anirà més o menys ràpid per canviar la seva
+freqüència de tall
+
+---------------------------------------------------------------------------------------------
+TODO:
+
+>> Noise substraction: LMS, Kalman, Wiener --> incrementar SNR
+>> SII summary.
+
+----------------------------------------------------------------------------ç
+Things to remember:
+>> LPAS (Linear Prediction Analysis by Synthesis)
+
+>> attach release time amb teo de servos
+>> reaprofitament de les estructures
+>> injecció codi (scilab scripts) a l'apèndix
+
+>> Armeria: funció extesa del mapeig de alpha.

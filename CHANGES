@@ -1,0 +1,13 @@
+Release notes for Magnus (http://magnusproject.wordpress.com)
+
+>>> Magnus 0.1.0
+First release of Magnus.
+
+>>> Magnus 0.1.1
+This release includes a speech enhancement module to
+increase the robustness of the recognitions as well as
+two additional commands:
+* to make Magnus sleep in order
+  not to bother the user while doing something else.
+* to change the focus of the application, so emulating the
+  Alt+Tab keyboard combination.
